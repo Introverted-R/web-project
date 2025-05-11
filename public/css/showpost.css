@@ -1,0 +1,107 @@
+/* Base settings for the page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and footer inherited styles */
+.header, .footer {
+    background-color: #0066cc; /* Example header/footer color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Styling for the title of the page */
+.title-deg {
+    font-size: 24px;
+    color: #004d99; /* Echoing header/footer theme */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Container for the posts */
+.posts-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling for each post card */
+.post-card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the post image */
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the post content */
+.post-content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 20px;
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styling for the post action buttons */
+.post-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}

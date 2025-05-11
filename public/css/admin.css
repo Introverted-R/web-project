@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.user-controls a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px); /* Assuming the header and footer take up 30px each */
+}
+
+aside {
+    width: 200px; /* fixed width */
+    background-color: #f4f4f4; /* light grey background */
+    padding: 20px;
+    height: 100vh; /* full height */
+    border-right: 2px solid #ccc; /* adds a division line */
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+aside nav ul li a:hover {
+    background-color: #ddd;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: auto; /* Adds scroll to main content if overflow */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.d-flex {
+    display: flex;
+    flex-direction: row; /* Ensure this is explicitly set or checked */
+    width: 100%; /* Full width to contain sidebar and content */
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.page-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white; /* ensures background is white */
+    overflow: auto; /* adds scrolling to the content area */
+}
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    width: 250px; /* Fixed sidebar width */
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1; /* Takes up remaining space */
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%; /* Full width */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .content {
+        order: 1; /* Ensures content is below the sidebar */
+    }
+}
+.alert {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
